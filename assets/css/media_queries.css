@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px) {
+    nav ul{
+      display: block;
+      color: white;
+      background: rgba(179, 175, 175, 0.5);
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 0;
+    }
+    nav ul li{
+      cursor: pointer;
+      text-transform: uppercase;
+      color: initial;
+      text-align: end;
+      padding-inline: 10px;
+      padding-block: 10px;
+      padding-bottom: 0px;
+      border: 0px solid transparent;
+      padding: 7px;
+    }
+    nav ul li:hover::after{
+      height: 0px;
+    }
+    nav ul li:hover{
+      background: black;
+      color: white;
+    }
+    nav ul.toggler{
+      display:none;
+    }
+    nav #menu{
+      display: block;
+    }
+    nav ul li:hover{
+      border-radius: 0px;
+      border: 0px solid transparent;
+    }
+    section #buttons button{
+      padding: 5px 15px;
+    }
+}
+@media only screen and (max-width: 468px) and (min-width: 200px){
+  section #buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section #buttons button{
+    padding: 5px 10px;
+  }
+  
+}

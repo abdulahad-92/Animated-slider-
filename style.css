@@ -1,0 +1,212 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+*{
+  --russian-violet: hsl(269, 36%, 22%);
+  --dark-purple: hsl(268, 22%, 15%);
+  --eerie-black: hsl(240, 4%, 10%);
+  --days-gray: hsl(0, 0%, 34%);
+  --light-gray: hsl(0, 0%, 84%);
+  --cultured-1: hsl(0, 0%, 98%);
+  --cultured-2: hsl(280, 14%, 96%);
+  --cultured-3: hsl(280, 9%, 94%);
+  --gainsboro: hsl(0, 1%, 85%);
+  --black_10: hsla(0, 0%, 0%, 0.1);
+  --black_5: hsla(0, 0%, 0%, 0.05);
+  --pumpkin: hsl(22, 90%, 56%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+
+  --fs-1: 3rem;
+  --fs-2: 2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.4rem;
+  --fs-5: 1.3rem;
+
+  --fw-900: 900;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+
+  --section-padding: 50px;
+
+  --shadow-1: 0px 0px 20px var(--black_10);
+  --shadow-2: 0 0 20px 4px var(--black_5);
+
+  --radius-6: 6px;
+  --radius-10: 10px;
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+  
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+/* ---------------- */
+
+
+/* BACKGROUND */
+main{
+  width: 100%;
+  height: 100vh;
+  background: url(assets/images/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* NAV BAR */
+nav#navBar{
+  width: 100%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 50px;
+}
+nav #logo{
+  cursor: pointer;
+}
+nav #logo img{
+  width: 100px;
+}
+#right_nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+nav ul{
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+nav ul li{
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border: 1px solid transparent;
+  padding: 4px;
+  transition: .3s;
+}
+nav ul li:hover{
+  border-radius: 5px;
+  border: 1px solid white;
+}
+nav #menu img{
+  width: 40px;
+  cursor: pointer;
+}
+nav #menu{
+  display: none;
+}
+/* -------------------------------------- */
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+section #right{
+  flex-basis: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section #right h1{
+  width: 100%;
+  height: 20%;
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+}
+section #right #boxes{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  align-items:flex-end;
+}
+section #right #boxes img{
+  width: 5%;
+  height: 10%;
+  object-fit: contain;
+  margin-bottom: 10%;
+  margin-inline: 1%;
+  cursor: pointer;
+}
+section #right #boxes .box{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: end;
+  margin-bottom: 7%;
+  cursor: pointer;
+}
+section #right #boxes .box img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0%;
+  object-fit: contain;
+  opacity: .5;
+  transition: 0.5s; 
+}
