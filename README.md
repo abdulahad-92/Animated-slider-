@@ -1,6 +1,3 @@
-# Custom Animated Slider
-Classy animations with aesthetic photos 
-
 *Custom Animated Slider*
 ==========================
 A nostalgic project from my design learning days
@@ -12,6 +9,7 @@ A sleek, customizable animated slider built with HTML, CSS, and JavaScript - my 
 * Smooth animations and transitions
 * Customizable slider layout and design
 * Responsive design for seamless mobile experience
+* Classy animations with aesthetic photos 
 *Tech Stack*
 ---------------- 
 HTML5 | CSS3 | JavaScript (Vanilla)
